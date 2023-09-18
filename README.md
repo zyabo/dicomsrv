@@ -10,7 +10,7 @@ docker run [-v /path/to/images:/images] -i -t -p 8042:8042 camicroscope/dicomsrv
 
 # Updating caMicroscope orthanc-indexer plugin
 
-Because build_orthanc_indexer.sh does "git clone" without specifying commit hash, Docker caches this line so if caMicroscope plugin repository is updated, please make a new tag there (such as: v0.3) and update the version in number in the script. See also the [BFBridge documentation](https://github.com/camicroscope/BFBridge/wiki/Updating-BFBridge) which describes the exact steps.
+Because build_orthanc_indexer.sh does "git clone" without specifying commit hash, Docker caches this line so if caMicroscope plugin repository is updated, please make a new tag there (such as: v0.3) and update the version in number in the script. See also the [BFBridge documentation](https://github.com/camicroscope/BFBridge/wiki/Updating-BFBridge) which describes the exact steps. Note that making a tag should be done at github.com/camicroscope/orthanc-indexer and not here.
 
 ## Testing
 
