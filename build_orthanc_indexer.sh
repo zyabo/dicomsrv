@@ -17,5 +17,5 @@ make -j$(nproc)
 # doesn't work: ./UnitTests
 
 mv libOrthancIndexer.so.mainline ../../libOrthancIndexer.so
-cd ../..
+cd ../../..
 rm -rf orthanc-indexer
