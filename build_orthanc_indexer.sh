@@ -5,7 +5,7 @@ set -x
 
 git clone https://github.com/camicroscope/orthanc-indexer --branch=v0.0
 
-cd orthanc-indexer
+cd orthanc-indexer/src
 mkdir build
 cd build
 
