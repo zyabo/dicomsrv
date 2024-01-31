@@ -3,7 +3,7 @@ set -x
 
 # https://book.orthanc-server.com/plugins/indexer.html
 
-git clone https://github.com/camicroscope/orthanc-indexer --branch=v0.0
+git clone https://github.com/camicroscope/orthanc-indexer --branch=v3.11.0
 
 cd orthanc-indexer/src
 mkdir build
