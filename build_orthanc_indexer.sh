@@ -1,9 +1,11 @@
 set -e
 set -x
 
+indexer=$1
+
 # https://book.orthanc-server.com/plugins/indexer.html
 
-git clone https://github.com/camicroscope/orthanc-indexer --branch=v3.11.0
+git clone https://github.com/camicroscope/orthanc-indexer --branch=${indexer:-main} --depth 1
 
 cd orthanc-indexer/src
 mkdir build

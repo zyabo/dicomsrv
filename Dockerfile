@@ -23,8 +23,10 @@ WORKDIR /root/src
 
 # Indexer plugin to sync with the caMicroscope folder
 COPY build_orthanc_indexer.sh .
+ARG indexer
+run echo $indexer
 RUN chmod a+x build_orthanc_indexer.sh
-RUN ./build_orthanc_indexer.sh
+RUN ./build_orthanc_indexer.sh $indexer
 RUN chmod a+x libOrthancIndexer.so
 
 COPY . .
